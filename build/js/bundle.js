@@ -1,4 +1,10 @@
-'use strict';
+/******/ (function() { // webpackBootstrap
+/******/ 	"use strict";
+var __webpack_exports__ = {};
+/*!*****************************!*\
+  !*** ./source/js/script.js ***!
+  \*****************************/
+
 var pageHeader = document.querySelector('.page-header');
 var headerToggle = document.querySelector('.page-header__toggle');
 
@@ -13,3 +19,6 @@ headerToggle.addEventListener('click', function () {
     pageHeader.classList.remove('page-header--opened');
   }
 });
+
+/******/ })()
+;

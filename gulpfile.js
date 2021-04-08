@@ -60,22 +60,6 @@ gulp.task('webpackProd', function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
