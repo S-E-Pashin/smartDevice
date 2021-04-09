@@ -1,1 +1,36 @@
 Папка для шрифтов.
+Помечу какие есть шрифты
+
++
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+
+
+
+
+
++
+font-family: PT Mono;
+
+font-weight: 400;
+
+PT Mono
+monospace
+
+
+
+
+
+
+
+font-family: Roboto Condensed;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+
+font-family: Roboto Condensed;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;

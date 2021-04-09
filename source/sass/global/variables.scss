@@ -1,25 +1,30 @@
-$font: "OpenSans", "Arial", sans-serif;
+$font_rc: "Roboto Condensed", "Arial", sans-serif;
+$font_r: "Roboto", "Arial", sans-serif;
+$font_pt_mono: "PT Mono", "Courier New", monospace;
+
 $desktop_min: 1024px;
 $tablet_max: 1023px;
-$mobile_max: 767px;
-$mobile_min: 280px;
+$tablet_min: 770px;
+$mobile_max: 769px;
+$mobile_min: 320px;
 
-$bg_first_color: #ffffff;
-$bg_second_color: #161616;
-$bg_third_color: #f6f6f6;
-$bg_fourth_color: #f9f7f6;
-$bg_five_color: #131314;
-$bg_map_color: #e6e6e6;
+$bg_first_color: #fafafa;
+//$bg_second_color: #161616;
+//$bg_third_color: #f6f6f6;
+//$bg_fourth_color: #f9f7f6;
+//$bg_five_color: #131314;
+//$bg_map_color: #e6e6e6;
 
-$text_main_color: rgba(72, 73, 77, 1);
-$text_second_color: rgba(141, 141, 141, 1);
-$text_third_color: #000000;
-$text_third_color_50: rgba(0, 0, 0, 0.5);
-$text_fourth_color: #1f1f1f;
+$text_main_color: #ffffff;
+$text_second_color: #788891;
+//$text_third_color: #000000;
+//$text_third_color_50: rgba(0, 0, 0, 0.5);
+//$text_fourth_color: #1f1f1f;
 
-$border_first_color: rgba(255, 255, 255, 0.2);
-$border_second_color: #c9ccd4;
+//$border_first_color: rgba(255, 255, 255, 0.2);
+//$border_second_color: #c9ccd4;
 
-$button_color_form: #0ad9c6;
-$input_color_hover: rgba(10, 217, 198, 0.9);
-$button_color_hover: rgba(10, 217, 198, 0.8);
+$button_color_promo: #00b2ff;
+//$button_color_form: #0ad9c6;
+//$input_color_hover: rgba(10, 217, 198, 0.9);
+//$button_color_hover: rgba(10, 217, 198, 0.8);
