@@ -7,3 +7,24 @@
   width: 100%;
 }
 
+.main__advantages-about-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  //background-color: $bg_second_color;
+  background-color: $text_main_color;
+  background-image: url('../img/bg-triangles-desktop.svg');
+  background-repeat: no-repeat;
+  background-position: 0 -32px;
+
+  @media (max-width: $tablet_max) {
+    background-image: url('../img/bg-triangles-tablet.svg');
+    background-position: 210px 91px;
+  }
+
+  @media (max-width: $mobile_max) {
+    background-position: -118px 651px;
+  }
+}
