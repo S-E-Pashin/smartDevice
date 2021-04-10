@@ -6,6 +6,14 @@
   max-width: 1175px;
   min-width: 320px;
   min-height: 493px;
+
+  @media (max-width: $tablet_max) {
+    min-height: 463px;
+  }
+
+  @media (max-width: $mobile_max) {
+    min-height: 577px;
+  }
 }
 
 .about__wrapper {
@@ -86,6 +94,10 @@
     letter-spacing: -1px;
     word-spacing: -5px;
     color: $text_third_color;
+
+    @media (max-width: $tablet_max) {
+      font-size: 32px;
+    }
 
     @media (max-width: $mobile_max) {
       font-size: 28px;
