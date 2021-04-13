@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -227,13 +227,247 @@
       </ul>
     </div>
   </section>
+
+  <section class="form">
+    <div class="form__wrapper">
+      <div class="form__img">
+
+      </div>
+
+      <div class="form__area">
+        <div class="form__header">
+          <div class="form__heading">
+            <h3>Остались вопросы? Задайте их нам!</h3>
+          </div>
+          <div class="form__text">
+            <p>Мы проконсультируем Вас бесплатно</p>
+          </div>
+        </div>
+        <form class="form__body" method="post" action="https://echo.htmlacademy.ru">
+          <div class="form__user-wrapper">
+            <div class="form__field form__field-name">
+              <label for="form-id-name" class="form__label visually_hidden">Поле для ввода имени пользователя</label>
+              <input type="text" name="form-name-user-name" placeholder="Имя" id="form-id-name" required minlength="1"
+                     maxlength="20">
+            </div>
+            <div class="form__field form__field-tel">
+              <label for="form-id-tel" class="visually_hidden">Поле для ввода телефона</label>
+              <input type="tel" name="form-name-tel" placeholder="Телефон" id="form-id-tel" required
+                     pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+            </div>
+          </div>
+
+          <div class="form__field form__field-message">
+            <label for="form-id-message" class="visually_hidden">Поле для сообщения</label>
+            <textarea rows="10" cols="20" name="form-name-message" placeholder="Ваш вопрос" id="form-id-message"
+                      required></textarea>
+          </div>
+
+          <div class="form__footer">
+            <button class="form__button-submit" type="submit"
+                    aria-label="Нажмите для того что бы мы смогли с вами связаться">
+              Задать вопрос
+            </button>
+
+            <div class="form__checkbox-wrapper">
+              <input class="visually_hidden form__checkbox" type="checkbox" name="form__checkbox-name"
+                     value="form__checkbox" id="form__checkbox-id" checked="">
+              <label for="form__checkbox-id" class="form__checkbox-label">Я согласен на обработку персональных данных</label>
+
+            </div>
+          </div>
+
+
+        </form>
+
+      </div>
+    </div>
+
+
+
+
+
+  </section>
+
+
+
+
+
+
+
 </main>
 
 
 
 <footer class="footer">
+  <div class="footer__wrapper">
+    <div class="footer__logo-wrapper">
+      <div class="footer__logo">
+        <a href="#" aria-label="Вы находитесь на изображении логотипа компании Smart Device.">
+          <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#icon-logo-desktop"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="footer__slogan">
+        <div class="footer__slogan-heading">Service Device</div>
+        <div class="footer__slogan-text">умные технологии</div>
+      </div>
+    </div>
 
+    <div class="footer__additional-information footer__service"><a href="#">1999-2018 SD Service Devices</a></div>
+
+    <div class="social">
+      <a href="#" class="social__link">
+        <svg class="social__icon" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="img/sprite.svg#icon-facebook"></use>
+        </svg>
+      </a>
+      <a href="#" class="social__link">
+        <svg class="social__icon" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="img/sprite.svg#icon-ok"></use>
+        </svg>
+      </a>
+      <a href="#" class="social__link">
+        <svg class="social__icon" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="img/sprite.svg#icon-vk"></use>
+        </svg>
+      </a>
+    </div>
+
+    <div class="main-nav">
+
+      <div class="main-nav__first-wrapper">
+        <div class="main-nav__heading">
+          <h2>Разделы сайта</h2>
+
+          <button class="main-nav__button" type="button">
+
+          </button>
+        </div>
+        <ul class="main-nav__first-list">
+          <li class="main-nav__item"><a href="#" class="main-nav__link">О компании</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Продукты</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Производство печатных плат</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Монтаж печатных плат</a></li>
+        </ul>
+      </div>
+
+<!--      ul.main-nav__first-list>(li.main-nav__item>a.main-nav__link[href='#']{})*4-->
+      <ul class="main-nav__second-list">
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Комплектующие</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Доставка</a></li>
+        <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
+      </ul>
+
+    </div>
+
+    <div class="contacts">
+      <div class="contacts__heading">
+        <h3>Наш офис</h3>
+
+        <button class="contacts__button" type="button"></button>
+      </div>
+      <div class="contacts__body">
+        <div class="contacts__adress">
+          <p>г. Мытищи, Олимпийский проспект, д.10</p>
+        </div>
+        <ul class="contacts__phones-list">
+          <li class="contacts__item-tel"><a href="#" class="contacts__link-tel">+7 (495) 589-40-50</a></li>
+          <li class="contacts__item-tel"><a href="#" class="contacts__link-tel">+7 (925) 003-87-67</a></li>
+          <li class="contacts__item-tel"><a href="#" class="contacts__link-tel">+7 (926) 926-080-79</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__additional-information footer__policy"><a href="#">Условия конфиденциальности</a></div>
+
+    <div class="footer__additional-information footer__developed"><a href="#">Developed by wow studio</a></div>
+
+    <div class="footer__additional-information footer__rights"><a href="#">все права защищены</a></div>
+
+  </div>
 </footer>
+<section class="popup">
+  <div class="popup__wrapper">
+
+    <div class="popup__button-wrapper">
+      <button class="popup__button" type="button">
+        <svg class="popup__cross" width="17" height="17" viewBox="0 0 17 17" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="img/sprite.svg#icon-cross"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="popup__area">
+      <div class="popup__header">
+        <div class="popup__heading">
+          <h3>Закажите звонок</h3>
+        </div>
+        <div class="popup__text">
+          <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        </div>
+      </div>
+      <form class="popup__body" method="post" action="https://echo.htmlacademy.ru">
+        <div class="popup__user-wrapper">
+          <div class="popup__field form__field-name">
+            <label for="popup-id-name" class="popup__label visually_hidden">Поле для ввода имени пользователя</label>
+            <input type="text" name="popup-name-user-name" placeholder="Имя" id="popup-id-name" required minlength="1"
+                   maxlength="20">
+          </div>
+          <div class="popup__field popup__field-tel">
+            <label for="popup-id-tel" class="visually_hidden">Поле для ввода телефона</label>
+            <input type="tel" name="popup-name-tel" placeholder="Телефон" id="popup-id-tel" required
+                   pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+          </div>
+        </div>
+
+        <div class="popup__field popup__field-message">
+          <label for="popup-id-message" class="visually_hidden">Поле для сообщения</label>
+          <textarea rows="10" cols="20" name="popup-name-message" placeholder="Ваш вопрос" id="popup-id-message"
+                    required></textarea>
+        </div>
+
+        <div class="popup__footer">
+          <button class="popup__button-submit" type="submit"
+                  aria-label="Нажмите для того что бы мы смогли с вами связаться">
+            отправить
+          </button>
+
+          <div class="popup__checkbox-wrapper">
+            <input class="visually_hidden popup__checkbox" type="checkbox" name="popup__checkbox-name"
+                   value="popup__checkbox" id="popup__checkbox-id" checked="">
+            <label for="popup__checkbox-id" class="popup__checkbox-label">Я согласен на обработку персональных данных</label>
+
+          </div>
+        </div>
+
+
+      </form>
+
+    </div>
+  </div>
+
+</section>
 <script src="js/bundle.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
