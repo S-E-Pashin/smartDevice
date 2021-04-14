@@ -16,6 +16,14 @@
   }
 }
 
+.popup--close {
+  display: none;
+}
+
+.popup--open {
+  display: flex;
+}
+
 .popup__wrapper {
   display: flex;
   flex-direction: column;

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Лучшие велосипеды по лучшим условиям, компания велосипеды подберет максимально подходящий вам велосипед и поможет получить от этого как можно больше удовольствия. Возможна доставка. Звоните по телефону +749978468446">
+  <meta name="description" content="Лучшие печатные платы по лучшим условиям, компания поможет вам получить наиболее подходящие условия и прекрасное качество. Звоните по телефону +74950005252">
   <title>Сайт компании "Smart Device"</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link href="fonts/roboto-condensed-400.woff2" rel="preload" as="font" crossorigin="anonymous">
@@ -15,7 +15,6 @@
 <body class="body">
 <header class="header">
   <div class="header__wrapper">
-
     <div class="header__logo-wrapper">
       <div class="header__logo">
         <a href="#" aria-label="Вы находитесь на изображении логотипа компании Smart Device.">
@@ -40,7 +39,7 @@
         </div>
       </div>
       <div class="header__callback">
-        <a href="#">заказать звонок</a>
+        <a href="#popup" class="header__callback-link">заказать звонок</a>
       </div>
     </div>
 
@@ -59,13 +58,13 @@
       <div class="promo__text">
         <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
       </div>
-      <a href="#" class="promo__button">
+      <a href="#form" class="promo__button">
         <span>получить бесплатную консультацию</span>
         <span>бесплатная консультация</span>
       </a>
 
       <div class="promo__scroll-wrapper">
-        <a href="#" class="promo__scroll">
+        <a href="#advantages" class="promo__scroll">
           <span>Скролл вниз</span>
         </a>
       </div>
@@ -74,7 +73,7 @@
   </section>
 
   <div class="main__advantages-about-wrapper">
-    <section class="advantages">
+    <section class="advantages" id="advantages">
       <ul class="advantages__list">
         <li class="advantages__item advantages__item-stopwatch">
           <div class="advantages__item-img">
@@ -195,7 +194,7 @@
                 Производство печатных плат
               </h4>
             </div>
-            <button type="button" class="services__item-button"></button>
+            <div class="services__item-button"></div>
           </a>
         </li>
 
@@ -206,7 +205,7 @@
                 Монтаж печатных плат
               </h4>
             </div>
-            <button type="button" class="services__item-button"></button>
+            <div class="services__item-button"></div>
           </a>
         </li>
 
@@ -217,7 +216,7 @@
                 Комплектующие для светотехники
               </h4>
             </div>
-            <button type="button" class="services__item-button"></button>
+            <div class="services__item-button"></div>
           </a>
         </li>
 
@@ -225,7 +224,7 @@
     </div>
   </section>
 
-  <section class="form">
+  <section class="form" id="form">
     <div class="form__wrapper">
       <div class="form__img">
 
@@ -275,17 +274,7 @@
       </div>
     </div>
 
-
-
-
-
   </section>
-
-
-
-
-
-
 
 </main>
 
@@ -333,11 +322,11 @@
         <div class="main-nav__heading">
           <h2>Разделы сайта</h2>
 
-          <button class="main-nav__button" type="button">
+          <button class="main-nav__button main-nav__button--open" type="button">
 
           </button>
         </div>
-        <ul class="main-nav__first-list">
+        <ul class="main-nav__first-list main-nav__first-list--open">
           <li class="main-nav__item"><a href="#" class="main-nav__link">О компании</a></li>
           <li class="main-nav__item"><a href="#" class="main-nav__link">Продукты</a></li>
           <li class="main-nav__item"><a href="#" class="main-nav__link">Производство печатных плат</a></li>
@@ -345,8 +334,7 @@
         </ul>
       </div>
 
-<!--      ul.main-nav__first-list>(li.main-nav__item>a.main-nav__link[href='#']{})*4-->
-      <ul class="main-nav__second-list">
+      <ul class="main-nav__second-list main-nav__second-list--open">
         <li class="main-nav__item"><a href="#" class="main-nav__link">Комплектующие</a></li>
         <li class="main-nav__item"><a href="#" class="main-nav__link">Доставка</a></li>
         <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
@@ -358,9 +346,9 @@
       <div class="contacts__heading">
         <h3>Наш офис</h3>
 
-        <button class="contacts__button" type="button"></button>
+        <button class="contacts__button contacts__button--open" type="button"></button>
       </div>
-      <div class="contacts__body">
+      <div class="contacts__body contacts__body--open">
         <div class="contacts__adress">
           <p>г. Мытищи, Олимпийский проспект, д.10</p>
         </div>
@@ -380,7 +368,7 @@
 
   </div>
 </footer>
-<section class="popup">
+<section class="popup popup--close" id="popup">
   <div class="popup__wrapper">
 
     <div class="popup__button-wrapper">
@@ -401,7 +389,7 @@
       </div>
       <form class="popup__body" method="post" action="https://echo.htmlacademy.ru">
         <div class="popup__user-wrapper">
-          <div class="popup__field form__field-name">
+          <div class="popup__field popup__field-name">
             <label for="popup-id-name" class="popup__label visually_hidden">Поле для ввода имени пользователя</label>
             <input type="text" name="popup-name-user-name" placeholder="Имя" id="popup-id-name" required="" minlength="1" maxlength="20">
           </div>
@@ -427,33 +415,15 @@
 
           </div>
         </div>
-
-
       </form>
 
     </div>
   </div>
 
 </section>
+<script src="js/jquery/jquery-3.6.0.slim.js"></script>
+<script src="js/jquery/jquery.maskedinput.min.js"></script>
 <script src="js/bundle.js"></script>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

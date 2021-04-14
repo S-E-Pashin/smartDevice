@@ -16,9 +16,6 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 
-
-//$$$$$$$$$$$$$$$
-
 var webpack = require('webpack');
 var webpackConfig = require('./webpack.config.js');
 
@@ -148,6 +145,7 @@ gulp.task("copy", function () {
     "source/fonts/**/*.{woff2, woff}",
     "source/fonts/**/*.{woff, woff2}",
     "source/img/**",
+    "source/js/jquery/**",
     "source//*.ico"
     // "source/js/**",
     ], {
