@@ -1,10 +1,13 @@
 /******/ (function() { // webpackBootstrap
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
 !function() {
+"use strict";
 /*!**********************************!*\
   !*** ./source/js/footer-menu.js ***!
   \**********************************/
+
+
 $(document).ready(function () {
   $('.main-nav__button').click(function () {
     if ($('.main-nav__button').hasClass('main-nav__button--open')) {
@@ -36,42 +39,50 @@ $(document).ready(function () {
 });
 
 }();
-// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
 !function() {
+"use strict";
 /*!*********************************!*\
   !*** ./source/js/input-mask.js ***!
   \*********************************/
+
+
 $(document).ready(function () {
-  $("#form-id-tel").mask("+7 (999) 999 99 99");
-  $("#popup-id-tel").mask("+7 (999) 999 99 99");
+  $('#form-id-tel').mask('+7 (999) 999 99 99');
+  $('#popup-id-tel').mask('+7 (999) 999 99 99');
 });
 
-
 }();
-// This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
 !function() {
+"use strict";
 /*!***************************************!*\
   !*** ./source/js/popup-open-close.js ***!
   \***************************************/
+
+
 $(document).ready(function () {
   $('.header__callback').click(function () {
     if ($('.popup').hasClass('popup')) {
       $('.popup').removeClass('popup--close').addClass('popup--open');
 
-      setTimeout(()=>$('#popup-id-name').focus(), 100);
+      // setTimeout(()=>$('#popup-id-name').focus(), 100);
 
+      setTimeout(function () {
+        $('#popup-id-name').focus();
+      }, 100);
 
       $('.popup__button').click(function () {
         $('.popup').removeClass('popup--open').addClass('popup--close');
-      })
+      });
 
       $(document).keydown(function (e) {
         if (e.key === 'Escape' || e.key === 'x') {
           $('.popup').removeClass('popup--open').addClass('popup--close');
         }
-      })
+      });
     }
-  })
+  });
 });
 
 }();
@@ -83,29 +94,29 @@ $(document).ready(function () {
   \*********************************/
 
 
-let inputNamePopup = '';
-let inputTelPopup = '';
-let inputMessagePopup = '';
+var inputNamePopup = '';
+var inputTelPopup = '';
+var inputMessagePopup = '';
 
 $('#popup-id-name').keyup(function () {
   inputNamePopup = $('#popup-id-name').val();
   localStorage.setItem('inputNamePopup', inputNamePopup);
-  let lSN = localStorage.getItem('inputNamePopup');
-  console.log(lSN);
-})
+  // var lSN = localStorage.getItem('inputNamePopup');
+  // console.log(lSN);
+});
 
 $('#popup-id-tel').keyup(function () {
   inputTelPopup = $('#popup-id-tel').val();
   localStorage.setItem('inputTelPopup', inputTelPopup);
-  console.log(inputTelPopup);
-})
+  // console.log(inputTelPopup);
+});
 
 $('#popup-id-message').keyup(function () {
   inputMessagePopup = $('#popup-id-message').val();
   localStorage.setItem('inputMessagePopup', inputMessagePopup);
-  console.log(inputMessagePopup);
-})
-//todo рассмотреть возможность применения замыкания и выполнения функции по ссылке. На будущее.
+  // console.log(inputMessagePopup);
+});
+// todo рассмотреть возможность применения замыкания и выполнения функции по ссылке. На будущее.
 
 }();
 // This entry need to be wrapped in an IIFE because it need to be isolated against other entry modules.

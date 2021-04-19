@@ -421,27 +421,27 @@ body {
       background-color: #ffffff;
       border: none;
       border-radius: 0; }
-      .main-nav__button:after {
+      .main-nav__button::after {
         position: absolute;
-        content: '';
+        content: "";
         top: 7px;
         left: 0;
         width: 16px;
         height: 2px;
         background-color: #c4c4c4; }
-      .main-nav__button:before {
+      .main-nav__button::before {
         position: absolute;
         top: 0;
         left: 7px;
-        content: '';
+        content: "";
         width: 2px;
         height: 16px;
         background-color: #c4c4c4; } }
 
-.main-nav__button--close:before {
+.main-nav__button--close::before {
   background-color: #c4c4c4; }
 
-.main-nav__button--open:before {
+.main-nav__button--open::before {
   background-color: transparent; }
 
 .promo {
@@ -544,7 +544,7 @@ body {
       line-height: 26px; } }
   .promo__text p::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 66px;
     height: 2px;
     left: 4px;
@@ -798,12 +798,14 @@ body {
       align-items: center;
       margin: 27px 0 0 0; } }
 
-.form__field input, .form__field textarea {
+.form__field input,
+.form__field textarea {
   padding: 14px 0 14px 16px;
   background-color: #19baff;
   margin: 0 30px 40px 0; }
   @media (max-width: 769px) {
-    .form__field input, .form__field textarea {
+    .form__field input,
+    .form__field textarea {
       margin: 0 0 30px 0; } }
 
 .form__field input {
@@ -914,7 +916,7 @@ body {
         padding: 0 0 0 32px;
         line-height: 15px; } }
   .form__checkbox-wrapper label::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 3px;
     left: 40px;
@@ -1523,8 +1525,8 @@ body {
       margin-top: 46px; } }
 
 @media (max-width: 1023px) {
-  .footer:after {
-    content: '';
+  .footer::after {
+    content: "";
     position: absolute;
     top: 386px;
     width: 100%;
@@ -1533,11 +1535,11 @@ body {
     opacity: 0.2; } }
 
 @media (max-width: 769px) {
-  .footer:after {
+  .footer::after {
     display: none; } }
 
-.footer:before {
-  content: '';
+.footer::before {
+  content: "";
   position: absolute;
   top: 263px;
   width: 100%;
@@ -1545,10 +1547,10 @@ body {
   background-color: #626962;
   opacity: 0.2; }
   @media (max-width: 1023px) {
-    .footer:before {
+    .footer::before {
       top: 95px; } }
   @media (max-width: 769px) {
-    .footer:before {
+    .footer::before {
       display: none; } }
 
 .footer__logo-wrapper {
@@ -1712,6 +1714,11 @@ body {
   @media (max-width: 769px) {
     .contacts__body {
       margin: 33px 0 21px 0; } }
+  @media (max-width: 769px) {
+    .contacts__body--close {
+      display: none; }
+    .contacts__body--open {
+      display: flex; } }
 
 .contacts__adress p,
 .contacts__item-tel a {
@@ -1755,34 +1762,28 @@ body {
       background-color: #ffffff;
       border: none;
       border-radius: 0; }
-      .contacts__button:after {
+      .contacts__button::after {
         position: absolute;
-        content: '';
+        content: "";
         top: 7px;
         left: 0;
         width: 16px;
         height: 2px;
         background-color: #c4c4c4; }
-      .contacts__button:before {
+      .contacts__button::before {
         position: absolute;
         top: 0;
         left: 7px;
-        content: '';
+        content: "";
         width: 2px;
         height: 16px;
         background-color: #c4c4c4; } }
 
-.contacts__button--close:before {
+.contacts__button--close::before {
   background-color: #c4c4c4; }
 
-.contacts__button--open:before {
+.contacts__button--open::before {
   background-color: transparent; }
-
-@media (max-width: 769px) {
-  .contacts__body--close {
-    display: none; }
-  .contacts__body--open {
-    display: flex; } }
 
 .social {
   display: flex;
@@ -1894,14 +1895,16 @@ body {
     .popup__user-wrapper {
       margin: 10px 0 0 0; } }
 
-.popup__field input, .popup__field textarea {
+.popup__field input,
+.popup__field textarea {
   padding: 14px 0 17px 25px;
   background-color: #19baff;
   margin: 0 0 30px 0;
   width: 21.5vw;
   min-width: 400px; }
   @media (max-width: 769px) {
-    .popup__field input, .popup__field textarea {
+    .popup__field input,
+    .popup__field textarea {
       min-width: 300px;
       margin: 0 0 10px 0; } }
 
@@ -1979,7 +1982,7 @@ body {
       .popup__checkbox-wrapper label {
         width: 232px; } }
   .popup__checkbox-wrapper label::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 3px;
     left: 1px;

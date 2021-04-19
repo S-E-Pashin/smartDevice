@@ -1,17 +1,17 @@
 body {
   background-color: $bg_first_color;
-  background-image: url('../img/promo-desktop_1x.jpg');
+  background-image: url("../img/promo-desktop_1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100% 881px;
 
   @media (max-width: $tablet_max) {
-    background-image: url('../img/promo-tablet_1x.jpg');
+    background-image: url("../img/promo-tablet_1x.jpg");
     background-size: 100% 686px;
   }
 
   @media (max-width: $mobile_max) {
-    background-image: url('../img/promo-mobile_1x.jpg');
+    background-image: url("../img/promo-mobile_1x.jpg");
     background-size: 100% 647px;
   }
 }

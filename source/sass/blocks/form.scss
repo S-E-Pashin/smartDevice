@@ -6,7 +6,7 @@
   width: 100%;
   min-height: 670px;
   background-color: $button_color_promo;
-  background-image: url('../img/question-bg_1x.jpg');
+  background-image: url("../img/question-bg_1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100% 670px;
@@ -25,7 +25,7 @@
   width: 511px;
   height: 288px;
   margin: 63px 0 0 0;
-  background-image: url('../img/glider-desktop_1x.png');
+  background-image: url("../img/glider-desktop_1x.png");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
@@ -196,7 +196,8 @@
 }
 
 .form__field {
-  & input, textarea {
+  & input,
+  textarea {
     padding: 14px 0 14px 16px;
     background-color: $bg_form_input;
     margin: 0 30px 40px 0;
@@ -336,7 +337,7 @@
   }
 
   & label::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 3px;
     left: 40px;
@@ -351,7 +352,7 @@
   }
 
   & input:checked + label::before {
-    background-image: url('../img/icon-mark.svg');
+    background-image: url("../img/icon-mark.svg");
     background-repeat: no-repeat;
     background-position: center center;
   }

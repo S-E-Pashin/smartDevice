@@ -41,7 +41,6 @@
 }
 
 .promo__heading {
-
   @media (max-width: $tablet_max) {
     width: 309px;
   }
@@ -117,7 +116,7 @@
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 66px;
     height: 2px;
     left: 4px;
@@ -205,14 +204,12 @@
   height: 93px;
   margin: 0;
   padding: 0;
-
 }
 
-.promo__scroll-wrapper span  {
+.promo__scroll-wrapper span {
   display: inline-block;
   margin: 0;
   padding: 0;
-
   transform: rotate(270deg) translateX(-83px) translateY(16px);
   transform-origin: left bottom;
   width: 96px;

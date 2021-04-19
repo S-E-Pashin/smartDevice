@@ -1,3 +1,5 @@
+'use strict';
+
 $(document).ready(function () {
   $('.main-nav__button').click(function () {
     if ($('.main-nav__button').hasClass('main-nav__button--open')) {

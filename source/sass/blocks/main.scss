@@ -15,12 +15,12 @@
   width: 100%;
   //background-color: $bg_second_color;
   background-color: $text_main_color;
-  background-image: url('../img/bg-triangles-desktop.svg');
+  background-image: url("../img/bg-triangles-desktop.svg");
   background-repeat: no-repeat;
   background-position: 0 -32px;
 
   @media (max-width: $tablet_max) {
-    background-image: url('../img/bg-triangles-tablet.svg');
+    background-image: url("../img/bg-triangles-tablet.svg");
     background-position: 210px 91px;
   }
 
