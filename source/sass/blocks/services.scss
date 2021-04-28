@@ -154,38 +154,38 @@
   }
 
   &-production {
-    background-image: url("..//img/production-desktop_1x.jpg");
+    background-image: url("../img/production-desktop_1x.jpg");
 
     @media (max-width: $tablet_max) {
-      background-image: url("..//img/production-tablet_1x.jpg");
+      background-image: url("../img/production-tablet_1x.jpg");
     }
 
     @media (max-width: $bg_services_step_1) {
-      background-image: url("..//img/production-mobile_1x.jpg");
+      background-image: url("../img/production-mobile_1x.jpg");
     }
   }
 
   &-mounting {
-    background-image: url("..//img/mounting-desktop_1x.jpg");
+    background-image: url("../img/mounting-desktop_1x.jpg");
 
     @media (max-width: $tablet_max) {
-      background-image: url("..//img/mounting-tablet_1x.jpg");
+      background-image: url("../img/mounting-tablet_1x.jpg");
     }
 
     @media (max-width: $bg_services_step_1) {
-      background-image: url("..//img/mounting-mobile_1x.jpg");
+      background-image: url("../img/mounting-mobile_1x.jpg");
     }
   }
 
   &-accessories {
-    background-image: url("..//img/accessories-desktop_1x.jpg");
+    background-image: url("../img/accessories-desktop_1x.jpg");
 
     @media (max-width: $tablet_max) {
-      background-image: url("..//img/accessories-tablet_1x.jpg");
+      background-image: url("../img/accessories-tablet_1x.jpg");
     }
 
     @media (max-width: $bg_services_step_1) {
-      background-image: url("..//img/accessories-mobile_1x.jpg");
+      background-image: url("../img/accessories-mobile_1x.jpg");
     }
   }
 }
