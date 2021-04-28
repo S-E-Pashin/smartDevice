@@ -25,6 +25,14 @@ body {
     background-image: url("../img/promo-mobile_1x.jpg");
     background-size: 100% 647px;
   }
+
+  @media (min-height: 4000px) {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
 }
 
 .body--restricted-travel {

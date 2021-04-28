@@ -114,7 +114,7 @@
 
   @media (max-width: $mobile_max) {
     width: 223px;
-    margin: 27px 0 0;
+    margin: 25px 0 0;
     font-size: 16px;
     line-height: 26px;
   }
@@ -170,7 +170,7 @@
     border: 1px solid $text_main_color;
 
     & span {
-      color: $button_color_promo;
+      //color: $button_color_promo;
     }
   }
 }
@@ -229,8 +229,10 @@
   transform-origin: left bottom;
   width: 96px;
   height: 13px;
+  font-size: 14px;
   text-align: center;
-  word-spacing: 10px;
+  letter-spacing: 1px;
+  word-spacing: 6px;
   color: $text_main_color;
   opacity: 0.5;
 }
