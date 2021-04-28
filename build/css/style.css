@@ -138,7 +138,6 @@ body {
   margin: 33px 0 0 0; }
   @media (max-width: 1400px) {
     .header__wrapper {
-      flex-wrap: wrap;
       padding: 0 20px 0 20px; } }
   @media (max-width: 1023px) {
     .header__wrapper {
@@ -204,11 +203,10 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   max-width: 1110px;
   min-height: 45px;
   min-width: 34.42vw; }
-  @media (min-width: 1920px) {
+  @media (min-width: 1921px) {
     .header__contacts {
       min-width: 430px; } }
   @media (max-width: 1023px) {
@@ -227,7 +225,7 @@ body {
   max-width: 740px;
   min-height: 18px;
   margin-right: 34px; }
-  @media (min-width: 1920px) {
+  @media (min-width: 1921px) {
     .header__tools {
       min-width: 430px; } }
   @media (max-width: 1023px) {
@@ -243,14 +241,15 @@ body {
 
 .header__tools div {
   margin-right: 24px;
-  margin-bottom: 0; }
+  margin-bottom: 4px;
+  margin-left: 4px; }
   @media (max-width: 769px) {
     .header__tools div {
       margin-top: 0;
       margin-right: 10px; } }
 
 .header__tools div:nth-child(n+2) {
-  margin: 0 0 10px 10px; }
+  margin: 0 0 4px 10px; }
   @media (max-width: 1572px) {
     .header__tools div:nth-child(n+2) {
       margin-top: 5px; } }
@@ -513,7 +512,7 @@ body {
   min-height: 793px;
   max-width: 1920px;
   padding: 231px 0 0 12.96vw; }
-  @media (min-width: 1920px) {
+  @media (min-width: 1921px) {
     .promo {
       padding: 231px 0 0 248px; } }
   @media (max-width: 1023px) {
