@@ -17,6 +17,10 @@
   margin: 109px 0 0 0;
   list-style: none;
 
+  @media (max-width: 1250px) {
+    margin: 109px 25px 0 25px;
+  }
+
   @media (max-width: $tablet_max) {
     width: 93.5vw;
     margin: 53px 25px 0 25px;
@@ -42,7 +46,7 @@
   min-width: 390px;
   min-height: 299px;
   margin-bottom: 30px;
-  padding: 40px 0 0 42px;
+  padding: 40px 0 40px 42px;
   border: 1px solid $border_first_color;
   border-left: 3px solid $button_color_promo;
   background-color: $text_main_color;
@@ -52,11 +56,11 @@
   }
 
   @media (max-width: $tablet_max) {
-    //width: 44.85vw;
-    width: 344px;
+    width: 44.5vw;
     min-width: 330px;
     min-height: 228px;
-    padding: 24px 0 0 24px;
+    margin-bottom: 30px;
+    padding: 24px 0 10px 24px;
     flex-grow: 0;
   }
 
@@ -113,15 +117,15 @@
   display: block;
   margin: 0;
   font-family: $font_rc;
-  font-size: 23px;
+  font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   text-align: left;
   color: $button_color_promo;
-  letter-spacing: -1px;
+  letter-spacing: 0;
 
   @media (max-width: $tablet_max) {
-    font-size: 21px;
+    font-size: 24px;
     line-height: 24px;
     font-weight: 400;
     text-align: left;
@@ -129,16 +133,22 @@
   }
 
   @media (max-width: $mobile_max) {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 24px;
     letter-spacing: 0;
   }
 }
 
 @media (max-width: $tablet_max) {
+  .advantages__item-chosen {
+    & .advantages__item-text {
+      margin-top: 16px;
+      margin-bottom: 12px;
+    }
+  }
+
   .advantages__item-stopwatch {
     padding: 24px 0 17px 24px;
-    margin-bottom: 10px;
 
     & .advantages__item-heading {
       margin-top: 9px;
@@ -157,22 +167,24 @@
 }
 
 .advantages__item-text {
-  //width: 480px;
   width: 25vw;
   min-width: 360px;
   margin-top: 23px;
+  max-width: 100%;
 
   @media (min-width: 1921px) {
     max-width: 500px;
   }
 
   @media (max-width: $tablet_max) {
+    width: 38vw;
     min-width: 296px;
     margin-top: 14px;
     margin-bottom: 24px;
   }
 
   @media (max-width: $mobile_max) {
+    width: 77vw;
     min-width: 235px;
   }
 }
@@ -236,7 +248,6 @@
 
   .advantages__item-tag {
     .advantages__item-text {
-      width: 240px;
       margin-top: 20px;
     }
   }

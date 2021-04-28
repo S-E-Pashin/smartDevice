@@ -29,9 +29,15 @@
   min-height: 52px;
   margin: 33px 0 0 0;
 
+  @media (max-width: 1400px) {
+    padding: 0 20px 0 20px;
+  }
+
   @media (max-width: $tablet_max) {
+    width: 92vw;
     min-width: 720px;
     margin: 20px 0 0 0;
+    padding: 0;
   }
 
   @media (max-width: $mobile_max) {
@@ -102,9 +108,9 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  width: 34.42vw;
-  min-width: 550px;
+  max-width: 1110px;
   min-height: 45px;
+  min-width: 34.42vw;
 
   @media (max-width: $tablet_max) {
     width: fit-content;
@@ -119,42 +125,42 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  //width: 429px;
-  width: 22.34vw;
-  min-width: 360px;
+  min-width: 22.34vw;
   min-height: 18px;
-
+  margin-right: 34px;
 
   @media (max-width: $tablet_max) {
     width: fit-content;
     min-width: 83px;
     min-height: 25px;
+    margin-right: 0;
   }
 
   @media (max-width: $mobile_max) {
     max-width: 63.75vw;
+    margin-right: 1px;
   }
 }
 
 .header__tools div {
+  margin-right: 24px;
+  margin-bottom: 0;
+
   @media (max-width: $mobile_max) {
-    margin-top: 5px;
+    margin-top: 0;
+    margin-right: 10px;
   }
 }
 
 .header__tools div:nth-child(n+2) {
-  margin: 0 0 0 10px;
+  margin: 0 0 10px 10px;
 
   @media (max-width: 1572px) {
     margin-top: 5px;
   }
 
-  @media (max-width: $tablet_max) {
-    margin-top: 0;
-  }
-
   @media (max-width: $mobile_max) {
-    margin-top: 5px;
+    margin-top: 11px;
   }
 }
 
@@ -212,6 +218,12 @@
 }
 
 .header__callback {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+
   @media (max-width: $tablet_max) {
     display: none;
   }
@@ -223,8 +235,9 @@
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  width: 180px;
-  height: 45px;
+  min-width: 180px;
+  min-height: 45px;
+
   font-family: $font_rc;
   font-size: 14px;
   line-height: 14px;
@@ -232,7 +245,11 @@
   text-align: center;
   color: $text_main_color;
   text-transform: uppercase;
-  letter-spacing: 0.05px;
+  letter-spacing: 1px;
   border: 1px solid $text_main_color;
   border-radius: 5px;
+
+  &:hover {
+    color: $bg_form_input;
+  }
 }

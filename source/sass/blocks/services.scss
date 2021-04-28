@@ -26,7 +26,7 @@
   margin: 96px 0 0 0;
 
   @media (max-width: $tablet_max) {
-    margin: 49px 0 0 0;
+    margin: 47px 0 0 0;
   }
 
   @media (max-width: $mobile_max) {
@@ -58,7 +58,7 @@
     opacity: 1;
 
     @media (max-width: $tablet_max) {
-      font-size: 31px;
+      font-size: 32px;
       line-height: 45px;
       width: 612px;
     }
@@ -70,19 +70,18 @@
     }
 
     & span {
-      font-size: 35px;
-      word-spacing: 6px;
-      letter-spacing: -2px;
+      letter-spacing: 0;
 
       @media (max-width: $tablet_max) {
-        font-size: 31px;
+        font-size: 32px;
         line-height: 32px;
-        word-spacing: 12px;
       }
 
       @media (max-width: $mobile_max) {
-        font-size: 27px;
-        line-height: 44px;
+        display: inline-block;
+        font-size: 28px;
+        line-height: 40px;
+        margin: 5px 0 3px 0;
       }
     }
   }
@@ -91,14 +90,18 @@
 .services__list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
   flex-wrap: wrap;
-  width: 63vw;
+  width: 99vw;
   max-width: 1200px;
   margin: 59px 0 0 -30px;
   padding: 0;
   list-style: none;
+
+  @media (max-width: 1210px) {
+    width: 79vw;
+  }
 
   @media (max-width: $tablet_max) {
     display: flex;
@@ -122,10 +125,9 @@
   align-items: center;
   flex-wrap: wrap;
   width: 19.27vw;
-  min-width: 290px;
+  min-width: 370px;
   height: 620px;
   margin: 0 0 20px 30px;
-  flex-grow: 1;
   background-color: $bg_fourth_color;
   background-repeat: no-repeat;
   background-position: top center;
@@ -137,8 +139,13 @@
 
   @media (max-width: $tablet_max) {
     width: 93vw;
+    min-width: 290px;
     height: 256px;
     margin: 0 0 46px 0;
+  }
+
+  @media (max-width: $tablet_min) {
+    background-size: cover;
   }
 
   @media (max-width: $mobile_max) {
@@ -153,7 +160,7 @@
       background-image: url("..//img/production-tablet_1x.jpg");
     }
 
-    @media (max-width: $mobile_max) {
+    @media (max-width: $bg_services_step_1) {
       background-image: url("..//img/production-mobile_1x.jpg");
     }
   }
@@ -165,7 +172,7 @@
       background-image: url("..//img/mounting-tablet_1x.jpg");
     }
 
-    @media (max-width: $mobile_max) {
+    @media (max-width: $bg_services_step_1) {
       background-image: url("..//img/mounting-mobile_1x.jpg");
     }
   }
@@ -177,7 +184,7 @@
       background-image: url("..//img/accessories-tablet_1x.jpg");
     }
 
-    @media (max-width: $mobile_max) {
+    @media (max-width: $bg_services_step_1) {
       background-image: url("..//img/accessories-mobile_1x.jpg");
     }
   }
@@ -215,7 +222,7 @@
     font-weight: 400;
     text-align: left;
     color: $text_main_color;
-    letter-spacing: -1px;
+    letter-spacing: 0;
   }
 }
 

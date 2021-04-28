@@ -7,7 +7,7 @@
   width: 100%;
   min-height: 793px;
   max-width: 1920px;
-  padding: 231px 0 0 249px;
+  padding: 231px 0 0 12.96vw;
 
   @media (max-width: $tablet_max) {
     min-height: 606px;
@@ -51,27 +51,33 @@
 }
 
 .promo__heading h2 {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
   margin: 0;
   font-family: $font_rc;
-  font-size: 74px;
+  font-size: 80px;
   line-height: 85px;
   font-weight: 700;
   text-align: center;
   color: $text_main_color;
   text-transform: uppercase;
+  letter-spacing: 6px;
 
   @media (max-width: $tablet_max) {
-    font-size: 57px;
+    font-size: 60px;
     line-height: 67px;
     font-weight: 700;
     text-align: left;
-    letter-spacing: -1px;
+    letter-spacing: 4px;
   }
 
   @media (max-width: $mobile_max) {
-    font-size: 36px;
-    line-height: 46px;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 2px;
   }
 }
 
@@ -113,7 +119,6 @@
     line-height: 26px;
   }
 
-
   &::before {
     position: absolute;
     content: "";
@@ -142,32 +147,42 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 407px;
-  height: 55px;
+  min-width: 407px;
+  min-height: 55px;
   margin: 46px 0 0 98px;
   border-radius: 5px;
   background-color: $button_color_promo;
 
   @media (max-width: $tablet_max) {
-    width: 379px;
+    min-width: 379px;
     margin: 55px 0 0 52px;
   }
 
   @media (max-width: $mobile_max) {
-    width: 287px;
+    min-width: 287px;
     margin: 39px 0 0 1px;
   }
 }
 
+.promo__wrapper .promo__button {
+  &:hover {
+    background-color: $bg_button_promo_hover;
+    border: 1px solid $text_main_color;
+
+    & span {
+      color: $button_color_promo;
+    }
+  }
+}
+
 .promo__button span {
-  font-family: $font_rc;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   text-align: center;
   color: $text_main_color;
   text-transform: uppercase;
-  letter-spacing: 0;
+  letter-spacing: 1px;
 }
 
 .promo__button span:first-child {

@@ -15,7 +15,7 @@
     width: 90vw;
     min-height: 73px;
     padding: 28px 0 0 0;
-    border-bottom: 1px solid $border_second_color;
+    border-bottom: 1px solid $border_third_color;
   }
 }
 
@@ -40,6 +40,7 @@
   text-align: left;
   color: $bg_third_color;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .contacts__body {
@@ -76,6 +77,10 @@
   opacity: 0.5;
 }
 
+.contacts__item-tel a:hover {
+  color: $bg_form_input;
+}
+
 .contacts__adress p {
   @media (max-width: $mobile_max) {
     width: 80vw;
@@ -109,7 +114,7 @@
     flex-wrap: wrap;
     width: 16px;
     height: 16px;
-    background-color: $text_main_color;
+    background-color: transparent;
     border: none;
     border-radius: 0;
 

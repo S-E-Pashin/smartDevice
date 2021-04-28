@@ -6,6 +6,8 @@ $desktop_min: 1024px;
 $tablet_max: 1023px;
 $tablet_min: 770px;
 $mobile_max: 769px;
+$bg_services_step_1: 520px;
+
 $mobile_min: 320px;
 
 $bg_first_color: #fafafa;
@@ -13,21 +15,22 @@ $bg_second_color: #e5e5e5;
 $bg_third_color: #1b2d37;
 $bg_fourth_color: #414f57;
 $bg_five_color: rgba(27, 45, 55, 0.8);
-$bg_six_color: rgba(27, 45, 55, 0.7);
 $bg_six_color: rgba(0, 0, 0, 0.7);
 $bg_form_input: #19baff;
-//$bg_map_color: #e6e6e6;
 
 $text_main_color: #ffffff;
 $text_second_color: #788891;
 $text_third_color: #666666;
-//$text_third_color_50: rgba(0, 0, 0, 0.5);
+
 $text_fourth_color: #203c42;
 
 $border_first_color: #ebebeb;
 $border_second_color: #626962;
+$border_third_color: #dcdddc;
 
 $button_color_promo: #00b2ff;
 $button_color_footer: #c4c4c4;
-//$input_color_hover: rgba(10, 217, 198, 0.9);
-//$button_color_hover: rgba(10, 217, 198, 0.8);
+
+$bg_a_hover_color: rgba(0, 178, 255, 0.2);
+$outline_a_hover_color: rgba(0, 178, 255, 0.4);
+$bg_button_promo_hover: rgba(15, 58, 81, 0.6);

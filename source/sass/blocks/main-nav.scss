@@ -2,7 +2,7 @@
   grid-column: 6/12;
   grid-row: 1/6;
   display: grid;
-  grid-template-rows: 45px 91px;
+  grid-template-rows: minmax(45px, max-content) minmax(91px, max-content);
   grid-template-columns: 238px 71px 125px;
 
   @media (max-width: 1445px) {
@@ -25,8 +25,8 @@
     width: 100%;
     margin: 51px 0 0 0;
     padding: 29px 0 0 0;
-    border-top: 1px solid $border_second_color;
-    border-bottom: 1px solid $border_second_color;
+    border-top: 1px solid $border_third_color;
+    border-bottom: 1px solid $border_third_color;
   }
 }
 
@@ -66,11 +66,12 @@
 .main-nav__heading h2 {
   margin: 0;
   font-family: $font_rc;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 15px;
   font-weight: 400;
   text-align: left;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .main-nav__first-list,
@@ -79,7 +80,6 @@
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -144,18 +144,22 @@
 
   &:last-child {
     margin: 0;
+
+    @media (max-width: $mobile_max) {
+      margin: 0 0 9px 0;
+    }
   }
 }
 
 .main-nav__link {
+  font-family: $font_pt_mono;
   font-size: 15px;
   line-height: 15px;
   font-weight: 400;
   text-align: left;
   color: $bg_third_color;
   opacity: 0.5;
-  letter-spacing: 1px;
-  word-spacing: 1px;
+  letter-spacing: 0;
 }
 
 .main-nav__button {
@@ -170,7 +174,7 @@
     flex-wrap: wrap;
     width: 16px;
     height: 16px;
-    background-color: $text_main_color;
+    background-color: transparent;
     border: none;
     border-radius: 0;
 

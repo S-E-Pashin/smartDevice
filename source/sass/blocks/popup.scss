@@ -54,8 +54,8 @@
   width: fit-content;
   margin: 0;
   font-family: $font_rc;
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 28px;
+  line-height: 28px;
   font-weight: 400;
   text-align: left;
   color: $text_main_color;
@@ -133,6 +133,7 @@
   & textarea {
     height: 106px;
     margin: 0 0 24px 0;
+    resize: none;
   }
 }
 
@@ -200,6 +201,7 @@
     line-height: 14px;
     font-weight: 400;
     text-align: left;
+    color: $text_main_color;
 
     @media (max-width: $mobile_max) {
       width: 232px;
