@@ -22,7 +22,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   width: 73.48vw;
   min-width: 1023px;
   max-width: 1411px;
@@ -30,6 +29,7 @@
   margin: 33px 0 0 0;
 
   @media (max-width: 1400px) {
+    flex-wrap: wrap;
     padding: 0 20px 0 20px;
   }
 
@@ -112,6 +112,10 @@
   min-height: 45px;
   min-width: 34.42vw;
 
+  @media (min-width: 1920px) {
+    min-width: 430px;
+  }
+
   @media (max-width: $tablet_max) {
     width: fit-content;
     min-width: 83px;
@@ -126,8 +130,13 @@
   align-items: center;
   flex-wrap: wrap;
   min-width: 22.34vw;
+  max-width: 740px;
   min-height: 18px;
   margin-right: 34px;
+
+  @media (min-width: 1920px) {
+    min-width: 430px;
+  }
 
   @media (max-width: $tablet_max) {
     width: fit-content;
