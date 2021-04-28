@@ -365,3 +365,10 @@
     background-position: center center;
   }
 }
+
+.form__field {
+  & input,
+  textarea {
+    color: $bg_six_color;
+  }
+}
