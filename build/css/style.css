@@ -1094,7 +1094,8 @@ body {
   padding: 40px 0 40px 42px;
   border: 1px solid #ebebeb;
   border-left: 3px solid #00b2ff;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  cursor: pointer; }
   @media (min-width: 1921px) {
     .advantages__item {
       max-width: 570px; } }

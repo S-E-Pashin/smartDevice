@@ -50,6 +50,7 @@
   border: 1px solid $border_first_color;
   border-left: 3px solid $button_color_promo;
   background-color: $text_main_color;
+  cursor: pointer;
 
   @media (min-width: 1921px) {
     max-width: 570px;
