@@ -60,6 +60,7 @@
     align-items: center;
     flex-wrap: wrap;
     width: 90vw;
+    cursor: pointer;
   }
 }
 
@@ -164,6 +165,7 @@
 
 .main-nav__button {
   display: none;
+  cursor: pointer;
 
   @media (max-width: $mobile_max) {
     position: relative;

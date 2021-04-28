@@ -170,14 +170,6 @@
 
 .header__tools div:nth-child(n+2) {
   margin: 0 0 4px 10px;
-
-  @media (max-width: 1572px) {
-    margin-top: 5px;
-  }
-
-  @media (max-width: $mobile_max) {
-    margin-top: 11px;
-  }
 }
 
 .header__tools div:nth-child(n+3) {
