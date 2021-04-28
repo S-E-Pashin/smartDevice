@@ -107,6 +107,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   max-width: 1110px;
   min-height: 45px;
   min-width: 34.42vw;
@@ -152,6 +153,11 @@
 }
 
 .header__tools div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   margin-right: 24px;
   margin-bottom: 4px;
   margin-left: 4px;

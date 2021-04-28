@@ -126,7 +126,7 @@
   flex-wrap: wrap;
   width: 19.27vw;
   min-width: 370px;
-  height: 620px;
+  min-height: 620px;
   margin: 0 0 20px 30px;
   background-color: $bg_fourth_color;
   background-repeat: no-repeat;
@@ -140,7 +140,7 @@
   @media (max-width: $tablet_max) {
     width: 93vw;
     min-width: 290px;
-    height: 256px;
+    min-height: 256px;
     margin: 0 0 46px 0;
   }
 
@@ -198,8 +198,13 @@
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
+  min-height: 620px;
   opacity: 1;
   background-color: $bg_five_color;
+
+  @media (max-width: $tablet_max) {
+    min-height: 256px;
+  }
 }
 
 .services__item-heading {
