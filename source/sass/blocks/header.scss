@@ -5,7 +5,7 @@
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  min-width: 1023px;
+  min-width: 1017px;
   min-height: 80px;
 
   @media (max-width: $tablet_max) {
@@ -23,7 +23,7 @@
   justify-content: space-between;
   align-items: center;
   width: 73.48vw;
-  min-width: 1023px;
+  min-width: 1013px;
   max-width: 1411px;
   min-height: 52px;
   margin: 33px 0 0 0;
@@ -259,5 +259,14 @@
 
   &:hover {
     color: $bg_form_input;
+  }
+}
+
+.header__logo-wrapper--disabled {
+  cursor: default;
+
+  &:hover {
+    background-color: transparent;
+    box-shadow: none;
   }
 }

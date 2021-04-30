@@ -99,8 +99,13 @@
   padding: 0;
   list-style: none;
 
+  @media (max-width: 1220px) {
+    justify-content: space-between;
+    width: 99vw;
+  }
+
   @media (max-width: 1210px) {
-    width: 79vw;
+    //width: 79vw;
   }
 
   @media (max-width: $tablet_max) {
@@ -135,6 +140,11 @@
 
   @media (min-width: 1920px) {
     max-width: 370px;
+  }
+
+  @media (max-width: 1220px) {
+    width: 30vw;
+    min-width: 300px;
   }
 
   @media (max-width: $tablet_max) {
@@ -208,7 +218,7 @@
 }
 
 .services__item-heading {
-  margin: 53px 0 0 43px;
+  margin: 50px 0 0 43px;
 
   @media (max-width: $tablet_max) {
     margin: 40px 0 0 43px;

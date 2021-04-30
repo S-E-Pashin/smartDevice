@@ -1,5 +1,5 @@
 body {
-  background-color: $bg_first_color;
+  background-color: $bg_third_color;
   background-image: url("../img/promo-desktop_1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
@@ -7,12 +7,21 @@ body {
 
   @media (max-width: 1900px) {
     background-clip: content-box;
-    background-position: top right;
+    background-position: top left;
     background-size: 1920px 881px;
+  }
+
+  @media (max-width: 1510px) {
+    background-position: -130px top;
+  }
+
+  @media (max-width: 1200px) {
+    background-position: -190px top;
   }
 
   @media (max-width: $tablet_max) {
     background-image: url("../img/promo-tablet_1x.jpg");
+    background-position: top left;
     background-size: 100% 686px;
   }
 
@@ -21,9 +30,18 @@ body {
     background-size: 770px 647px;
   }
 
+  @media (max-width: 610px) {
+    background-position: -150px top;
+  }
+
+  @media (max-width: 460px) {
+    background-position: -230px top;
+  }
+
   @media (max-width: 380px) {
     background-image: url("../img/promo-mobile_1x.jpg");
     background-size: 100% 647px;
+    background-position: left top;
   }
 
   @media (min-height: 4000px) {

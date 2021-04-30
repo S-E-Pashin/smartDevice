@@ -140,6 +140,16 @@
       background-color: $button_color_footer;
     }
   }
+
+  &:hover {
+    box-shadow: 0 0 30px 5px $outline_a_hover_color;
+    background-color: $bg_a_hover_color;
+    color: $bg_form_input;
+
+    & span {
+      color: $bg_form_input;
+    }
+  }
 }
 
 .contacts__button--close {

@@ -6,7 +6,7 @@
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  min-height: 316px;
+  min-height: 313px;
   background-color: $bg_first_color;
 
   @media (min-height: 4000px) {
@@ -16,9 +16,9 @@
 
 .footer__wrapper {
   display: grid;
-  margin-top: 64px;
+  margin-top: 62px;
   grid-template-columns: 109px 40px 65px 10px 195px 37px 143px 58px 71px 89px 36px 11.66vw 143px 193px;
-  grid-template-rows: minmax(47px, max-content) minmax(5px, max-content) minmax(54px, max-content) minmax(5px, max-content) minmax(25px, max-content) minmax(51px, max-content) minmax(1px, max-content) minmax(18px, max-content) minmax(14px, max-content);
+  grid-template-rows: minmax(27px, max-content) minmax(14px, max-content) minmax(50px, max-content) minmax(28px, max-content) minmax(81px, max-content) minmax(15px, max-content);
 
   @media (min-width: 1919px) {
     grid-template-columns: 109px 40px 65px 10px 195px 37px 143px 58px 71px 89px 36px 223px 143px 193px;
@@ -30,9 +30,9 @@
 
   @media (max-width: $tablet_max) {
     margin-top: 17px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     grid-template-columns: 220px 14px 9.09vw 9.48vw 151px 9px 9.35vw 112px;
-    grid-template-rows: 21px 14px 17px 66px 139px 73px 64px 15px;
+    grid-template-rows: minmax(12px, max-content) minmax(14px, max-content) minmax(17px, max-content) minmax(60px, max-content) minmax(139px, max-content) minmax(73px, max-content) minmax(47px, max-content) minmax(15px, max-content);
   }
 
   @media (max-width: $mobile_max) {
@@ -65,7 +65,7 @@
 .footer::before {
   content: "";
   position: absolute;
-  bottom: 52px;
+  bottom: 55px;
   width: 100%;
   height: 1px;
   background-color: $border_second_color;
@@ -121,7 +121,7 @@
 }
 
 .footer__slogan-heading {
-  margin: 0 0 3px 0;
+  margin: -1px 0 3px 0;
   font-family: $font_rc;
   font-size: 25px;
   line-height: 25px;
@@ -130,6 +130,10 @@
   color: $text_fourth_color;
 
   letter-spacing: 0;
+
+  @media (max-width: $tablet_max) {
+    margin: 4px 0 3px 0;
+  }
 }
 
 .footer__slogan-text {
@@ -217,8 +221,14 @@
   opacity: 0.5;
 
   @media (max-width: $tablet_max) {
+    display: block;
     font-size: 13px;
     letter-spacing: 0;
     word-spacing: 4px;
+    margin-top: 11px;
+  }
+
+  @media (max-width: $mobile_max) {
+    margin-top: 1px;
   }
 }
